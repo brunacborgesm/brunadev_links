@@ -27,7 +27,7 @@ export const LinkCard: React.FC<LinkCardProps> = ({ href, title, variant }) => {
   }
   return (
     <Link href={href} target='_blank' rel='noopener noreferrer'>
-      <div className='text-sm text-indigo-950 text-center bg-slate-100/70 px-3 py-5 rounded-2xl backdrop-blur flex justify-center items-center gap-2 mb-5'>
+      <div className='text-sm text-indigo-950 text-center bg-slate-100/70 px-3 py-5 rounded-2xl backdrop-blur flex justify-center items-center'>
         {renderIcon()}
         {title}
       </div>
