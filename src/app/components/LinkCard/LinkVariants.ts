@@ -4,7 +4,7 @@ import { SvgIconProps } from "@mui/material";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import WebsiteIcon from "@mui/icons-material/LanguageOutlined";
+import WebsiteIcon from "@mui/icons-material/Language";
 
 export type Variant = "instagram" | "linkedin" | "website" | "github";
 
