@@ -7,9 +7,9 @@ export const AvatarArea = () => {
       <Image
         alt='Avatar  de Bruna Borges Desenvolvedora Web'
         src='/profile.png'
-        width={250}
-        height={250}
-        className='md:w-[250px] lg:w-[250px]' />
+        width={150}
+        height={150}
+        className='pt-8' />
       <div className='py-4 text-3xl text-pink-600 font-bold text-center'>
         <h1>Bruna Borges</h1>
         <h3 className='text-2xl leading-5 font-normal'>Software Developer</h3>

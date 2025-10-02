@@ -31,7 +31,7 @@ export function LinkCard({
       <div
         className={
           [
-            'mb-4 flex items-center justify-center gap-2 rounded-2xl',
+            'flex items-center justify-center gap-2 rounded-2xl',
             'bg-slate-100/70 backdrop-blur px-3 py-4 text-sm text-indigo-950 shadow-sm',
             'transition hover:bg-slate-200/70',
             (config as any).className ?? '',
