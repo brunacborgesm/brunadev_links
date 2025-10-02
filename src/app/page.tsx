@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="mx-auto w-full max-w-sm px-4 py-10">
       <AvatarArea />
-      <section className="flex flex-col p-5 bg-transparent mx-auto rounded-2xl shadow-xl border border-indigo-900/70 gap-6">
+      <section className="flex flex-col p-5 bg-transparent mx-auto rounded-2xl shadow-xl border-3 border-indigo-900/70 gap-6">
         <LinkCard
           href="https://www.linkedin.com/in/brunacborgesm/" title="Conecte-se ao meu LinkedIn"
           variant="linkedin"
