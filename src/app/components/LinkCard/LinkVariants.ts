@@ -10,11 +10,10 @@ export type Variant = "instagram" | "linkedin" | "website" | "github";
 
 type VariantConfig = {
   Icon: ComponentType<SvgIconProps>;
-  className?: string;
   ariaLabel: string;
 };
 
-export const VARIANTS = {
+export const VARIANTS: Record<Variant, VariantConfig> = {
   instagram: {
     Icon: InstagramIcon,
     ariaLabel: "Abrir Instagram",
@@ -31,4 +30,4 @@ export const VARIANTS = {
     Icon: WebsiteIcon,
     ariaLabel: "Abrir Website de Bruna Borges",
   },
-} as const satisfies Record<Variant, VariantConfig>;
+};
