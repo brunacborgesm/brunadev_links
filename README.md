@@ -1,8 +1,13 @@
-# BrunaDev Links
+# Bruna Dev Links
 
-A minimal and fast link in bio page built with Next.js App Router and Tailwind CSS. It uses glassmorphism cards and icon variants for Instagram, LinkedIn, GitHub, and Website.
+A minimal and fast "linktree" in bio page built with Next.js App Router and Tailwind CSS. It uses glassmorphism cards and icon variants for Instagram, LinkedIn, GitHub, and Website.
 
-**Live:** https://your-vercel-url-here.vercel.app
+**Live:** https://brunadev-links.vercel.app/
+
+---
+
+## Preview
+![Preview](public/preview.png)
 
 ---
 
@@ -36,7 +41,7 @@ A minimal and fast link in bio page built with Next.js App Router and Tailwind C
 ### Install
 
 npm install
-# or
+or
 pnpm install
 
 ## Run in development
@@ -45,18 +50,4 @@ pnpm install
 ## Build and start
 - npm run build
 - npm run start
-
-### Project Structure
-src/
-  app/
-    layout.tsx          Global layout and background
-    page.tsx            Home page that renders the link cards
-  components/
-    AvatarArea.tsx      Hero and title area
-    LinkCard/
-      LinkCard.tsx      Link card component
-      LinkVariants.ts   Variant map with icons and aria labels
-public/
-  background.svg        Background image
-  hero.svg              Optional decorative hero image
 
