@@ -1,31 +1,30 @@
 import { AvatarArea } from "./components/AvatarArea";
 import Link from "next/link";
 import { LinkCard } from "./components/LinkCard/LinkCard";
+import { motion } from "framer-motion";
+import { SlideIn } from "./components/SlideIn";
 
 export default function Home() {
   return (
     <main className="mx-auto w-full max-w-sm px-4 py-10">
       <AvatarArea />
       <section className="flex flex-col p-5 bg-transparent mx-auto rounded-2xl shadow-xl border-3 border-indigo-900/70 gap-6">
-        <LinkCard
-          href="https://www.linkedin.com/in/brunacborgesm/" title="Conecte-se ao meu LinkedIn"
-          variant="linkedin"
-        />
-        <LinkCard
-          href="/"
-          title="Meu site pessoal"
-          variant="website"
-        />
-        <LinkCard
-          href="https://www.instagram.com/brunacarolinaa/"
-          title="Siga-me no Instagram"
-          variant="instagram"
-        />
-        <LinkCard
-          href="https://www.instagram.com/bmtechlab/"
-          title="Conheça minha empresa @bmtechlab"
-          variant="instagram"
-        />
+
+        <SlideIn from="left" delay={0.1}>
+          <LinkCard href="https://www.linkedin.com/in/brunacborgesm/" title="Conecte-se ao meu LinkedIn" variant="linkedin" />
+        </SlideIn>
+
+        <SlideIn from="right" delay={0.2}>
+          <LinkCard href="/" title="Meu site pessoal" variant="website" />
+        </SlideIn>
+
+        <SlideIn from="left" delay={0.3}>
+          <LinkCard href="https://www.instagram.com/brunacarolinaa/" title="Siga-me no Instagram" variant="instagram" />
+        </SlideIn>
+
+        <SlideIn from="right" delay={0.4}>
+          <LinkCard href="https://www.instagram.com/bmtechlab/" title="Conheça minha empresa @bmtechlab" variant="instagram" />
+        </SlideIn>
       </section>
 
       <footer className="flex text-slate-100 items-center justify-center pt-3">
